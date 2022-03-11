@@ -1,0 +1,81 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Cairo", sans-serif;
+}
+nav {
+  background-color: whitesmoke;
+  height: 30px;
+  border-radius: 30px;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+nav span {
+  color: blue;
+  font-weight: lighter;
+}
+#container {
+  display: flex;
+  justify-content: space-between;
+}
+#question {
+  height: 500px;
+  width: 80%;
+  background-color: #cbf1f5;
+  font-size: 30px;
+  padding-left: 80px;
+}
+#question input {
+  width: 30px;
+  height: 20px;
+  margin-top: 60px;
+}
+#side {
+  background-color: #b3cecf;
+  text-align: center;
+  height: 500px;
+  width: 20%;
+  font-size: 22px;
+}
+#side p {
+  background-color: #bee6e9;
+  color: black;
+}
+#timer {
+  text-align: center;
+  font-size: 20px;
+  background-color: #99e1e4;
+  font-weight: bolder;
+}
+#markbutn,
+#nexbutn,
+#prvbutn {
+  height: 30px;
+  width: 10%;
+  font-size: 20px;
+}
+#nex_prv_btn {
+  text-align: center;
+}
+#nex_prv_btn p {
+  font-size: 20px;
+  background-color: rgb(58, 65, 151);
+  width: 40px;
+  display: inline-block;
+  height: 25px;
+  padding-top: 2px;
+  color: white;
+}
+#subbutn {
+  height: 40px;
+  width: 100%;
+  background-color: #99e1e4;
+  color: black;
+  border-radius: 20px;
+  border: 2px white solid;
+  font-size: 25px;
+  letter-spacing: 2px;
+  margin: auto;
+}
