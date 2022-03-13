@@ -7,13 +7,38 @@ var error_message = document.getElementById("error_msg");
 
 function validReg() {
   if (
-    firstname.value == "" ||
-    lastname.value == "" ||
-    email.value == "" ||
-    password.value == "" ||
+    firstname.value == "" &&
+    lastname.value == "" &&
+    email.value == "" &&
+    password.value == "" &&
     re_password.value == ""
   ) {
     error_message.style.display = "inline-block";
+    return false;
+  }
+  if (firstname.value == "") {
+    error_message.style.display = "inline-block";
+    error_message.innerHTML = "Please write your firstname";
+    return false;
+  }
+  if (lastname.value == "") {
+    error_message.style.display = "inline-block";
+    error_message.innerHTML = "Please write your lastname";
+    return false;
+  }
+  if (email.value == "") {
+    error_message.style.display = "inline-block";
+    error_message.innerHTML = "Please write your email";
+    return false;
+  }
+  if (password.value == "") {
+    error_message.style.display = "inline-block";
+    error_message.innerHTML = "Please write your password";
+    return false;
+  }
+  if (re_password.value == "") {
+    error_message.style.display = "inline-block";
+    error_message.innerHTML = "Please write your confirm password";
     return false;
   }
   if (!isNaN(firstname.value)) {
