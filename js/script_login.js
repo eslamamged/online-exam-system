@@ -31,6 +31,6 @@ form.addEventListener("submit", function (e) {
     error_message.innerHTML = "invalid email or password";
     return false;
   } else {
-    location.replace("index.html");
+    location.replace("Home.html");
   }
 });

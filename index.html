@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 
@@ -13,41 +13,17 @@
     <nav>
         <h1><span>Online</span>Exam</h1>
     </nav>
-    <section id="timer"> </section>
-    <div id="container">
-        <div id="question">
-            <section id="text_question"></section>
-            <div>
-                <input type="radio" name="ans" class="selected" value="0">
-                <label id="q1" for="answer1"></label>
-            </div>
-            <div>
-                <input type="radio" name="ans" class="selected" value="1">
-                <label id="q2" for="answer2"></label>
-            </div>
-            <div>
-                <input type="radio" name="ans" class="selected" value="2">
-                <label id="q3" for="answer3"></label>
-            </div>
-            <div>
-                <input type="radio" name="ans" class="selected" value="3">
-                <label id="q4" for="answer4"></label>
-            </div>
-            <div id="nex_prv_btn">
-                <button id="nexbutn">Next</button>
-                <p id="num_Q">2</p>
-                <button id="prvbutn">Previous</button>
-                <button id="markbutn">Mark</button>
-            </div>
-        </div>
-        <div id="side">
-            <p>Number of Marked Questions</p>
-        </div>
+    <div id="mydiv">
+        <form method="post" id="LoginForm">
+            <span>Create an Account ?</span>
+            <a href="registerPage.html">Register</a>
+            <input id="useremail" type="text" name="email" placeholder="Enter Your Email">
+            <input id="userpass" type="password" name="pass" placeholder="Enter Your Password">
+            <input id="subBtn" type="submit" value="Log In">
+            <span id="error_msg" style="display: none;">Please write your account informations</span>
+        </form>
     </div>
-    <div id="div_btn">
-        <button id="subbutn">Submit</button>
-    </div>
-    <script src="js/script_examPage.js"></script>
+    <script src="js/script_login.js"></script>
 </body>
 
 </html>
