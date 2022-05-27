@@ -14,15 +14,15 @@
         <h1><span>Online</span>Exam</h1>
     </nav>
     <div id="mydiv">
-        <form method="post" action="login.html" onsubmit="return validReg()">
+        <form method="post">
             <span>Already Have an Account ?</span>
-            <a href="login.html">Log in</a>
+            <a href="./loginPage/login.html">Log in</a>
             <input id="firstname" type="text" name="f_name" placeholder="Enter Your FirstName">
             <input id="lastname" type="text" name="l_name" placeholder="Enter Your LastName">
             <input id="useremail" type="text" name="email" placeholder="Enter Your Email">
             <input id="userpass" type="password" name="pass" placeholder="Enter Your Password">
             <input id="repass" type="password" name="repass" placeholder="Re-enter Your password">
-            <input id="subBtn" type="submit" value="Register">
+            <button id="subBtn" type="button" onclick="validReg()">Register</button><br>
             <span id="error_msg">Please write your account informations</span>
         </form>
     </div>

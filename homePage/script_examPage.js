@@ -169,7 +169,7 @@ div_radio_btn.addEventListener("click", function (event) {
 sub_mit.addEventListener("click", function () {
   localStorage.setItem("result", get_result());
   localStorage.setItem("numberofquestion", random_arr.length);
-  location.replace("result.html");
+  location.replace("./../resultPage/result.html");
 });
 
 function get_result() {
@@ -189,7 +189,7 @@ function examTimer() {
     time_section.textContent = `${min}:${sec}`;
     if (time_exam === 0) {
       clearInterval(timerInterval);
-      location.replace("result.html");
+      location.replace("./../resultPage/result.html");
     }
     time_section.style.width = (time_exam / initial) * 100 + "%";
     time_exam--;

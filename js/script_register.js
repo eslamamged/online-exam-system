@@ -73,6 +73,6 @@ function validReg() {
     localStorage.setItem("lastname", lastname.value);
     localStorage.setItem("useremail", email.value);
     localStorage.setItem("userpassword", password.value);
-    return true;
+    window.location.href = "loginPage/login.html";
   }
 }
