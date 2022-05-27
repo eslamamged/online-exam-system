@@ -14,16 +14,19 @@
         <h1><span>Online</span>Exam</h1>
     </nav>
     <div id="mydiv">
-        <form method="post" id="LoginForm">
-            <span>Create an Account ?</span>
-            <a href="registerPage.html">Register</a>
+        <form method="post" action="login.html" onsubmit="return validReg()">
+            <span>Already Have an Account ?</span>
+            <a href="login.html">Log in</a>
+            <input id="firstname" type="text" name="f_name" placeholder="Enter Your FirstName">
+            <input id="lastname" type="text" name="l_name" placeholder="Enter Your LastName">
             <input id="useremail" type="text" name="email" placeholder="Enter Your Email">
             <input id="userpass" type="password" name="pass" placeholder="Enter Your Password">
-            <input id="subBtn" type="submit" value="Log In">
-            <span id="error_msg" style="display: none;">Please write your account informations</span>
+            <input id="repass" type="password" name="repass" placeholder="Re-enter Your password">
+            <input id="subBtn" type="submit" value="Register">
+            <span id="error_msg">Please write your account informations</span>
         </form>
     </div>
-    <script src="js/script_login.js"></script>
+    <script src="js/script_register.js"></script>
 </body>
 
 </html>
